@@ -20,6 +20,8 @@ h5{
 @media only screen and (max-width:768px){
 	.faq{
 		margin-left: 4vw
+		margin-right: 4vw
+		padding-right:0px;
 	}
 	.faq p{
 		text-align: center;
