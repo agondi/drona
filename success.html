@@ -1,20 +1,3 @@
-<?php
-
-if($_POST["submit"]) {
-    $recipient="contact@dronatech.in";
-    $subject="Request Demo";
-    $sender=$_POST["sender"];
-    $senderEmail=$_POST["senderEmail"];
-    $message=$_POST["message"];
-
-    $mailBody="Name: $sender\nEmail: $senderEmail\n\n$message";
-
-    mail($recipient, $subject, $mailBody, "From: $sender <$senderEmail>");
-
-    $thankYou="<p>Thank you! Your message has been sent.</p>";
-}
-
-?>
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
@@ -23,6 +6,7 @@ if($_POST["submit"]) {
 <meta property="og:title" content="Drona Tech" />
 <meta property="og:description" content="An end-to-end content SaaS for Indian students and teachers, by Indian students and teachers [...]" />
 <meta property="og:image" content="https://dronatech.in/" />
+<meta http-equiv="refresh" content="3;url=index.html" />
 <meta charset="UTF-8" />
 <link rel="profile" href="https://gmpg.org/xfn/11" />
 <link rel="stylesheet" href="bootstrap.min.css">
@@ -47,7 +31,6 @@ img.emoji {
 	background: none !important;
 	padding: 0 !important;
 }
-
 fix-3-12{max-width:280px!important}
 </style>
 <link rel='stylesheet' id='js_composer_front-css' href='assets/plugins/js_composer/assets/css/js_composer.min.css' type='text/css' media='all' />
@@ -143,6 +126,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <noscript><style> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript></head>
 <body class="page-template page-template-full-width page-template-full-width-php page page-id-9238 theme-foton foton-core-1.2 woocommerce-no-js foton-ver-1.4 mkdf-smooth-page-transitions mkdf-smooth-page-transitions-fadeout mkdf-grid-1300 mkdf-wide-dropdown-menu-content-in-grid mkdf-sticky-header-on-scroll-down-up mkdf-dropdown-default mkdf-header-standard mkdf-menu-area-shadow-disable mkdf-menu-area-in-grid-shadow-disable mkdf-menu-area-border-disable mkdf-menu-area-in-grid-border-disable mkdf-logo-area-border-disable mkdf-logo-area-in-grid-border-disable mkdf-header-vertical-shadow-disable mkdf-header-vertical-border-disable mkdf-side-menu-slide-from-right mkdf-woocommerce-columns-3 mkdf-woo-normal-space mkdf-woo-pl-info-below-image mkdf-woo-single-thumb-below-image mkdf-woo-single-has-pretty-photo mkdf-default-mobile-header mkdf-sticky-up-mobile-header mkdf-search-covers-header wpb-js-composer js-comp-ver-6.0.3 vc_responsive" itemscope itemtype="http://schema.org/WebPage">
 
+
 <div class="mkdf-wrapper">
 <div class="mkdf-wrapper-inner">
 <header class="mkdf-page-header">
@@ -157,9 +141,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </div>
 <div class="mkdf-position-center"><div class="mkdf-position-center-inner">
 <nav class="mkdf-main-menu mkdf-drop-down mkdf-default-nav">
-<ul id="menu-standard" class="clearfix"><li id="nav-menu-item-777" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent has_sub narrow"><a href="index.html#" class=""><span class="item_outer"><span class="item_text">Home</span></span></a>
+<ul id="menu-standard" class="clearfix"><li id="nav-menu-item-777" class="menu-item mkdf-active-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent has_sub narrow"><a href="index.html#" class=""><span class="item_outer"><span class="item_text">Home</span></span></a>
 <li id="nav-menu-item-777" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent   has_sub narrow"><a href="about.html" class=""><span class="item_outer"><span class="item_text">About</span></span></a>
-<li id="nav-menu-item-780" class="menu-item mkdf-active-item menu-item-type-custom menu-item-object-custom has_sub narrow"><a href="contact.html" class=""><span class="item_outer"><span class="item_text">Contact</span></span></a>
+<li id="nav-menu-item-780" class="menu-item menu-item-type-custom menu-item-object-custom has_sub narrow"><a href="contact.html" class=""><span class="item_outer"><span class="item_text">Contact</span></span></a>
 <li id="nav-menu-item-781" class="menu-item menu-item-type-custom menu-item-object-custom has_sub narrow"><a href="blog.html" class=""><span class="item_outer"><span class="item_text">Blog</span></span></a> </nav>
 </div>
 </div>
@@ -180,10 +164,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </div>
 <div class="mkdf-position-center"><div class="mkdf-position-center-inner">
 <nav class="mkdf-main-menu mkdf-drop-down mkdf-default-nav">
-<ul id="menu-standard" class="clearfix"><li id="nav-menu-item-777" class="menu-item mkdf-active-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent has_sub narrow"><a href="index.html" class=""><span class="item_outer"><span class="item_text">Home</span></span></a>
+<ul id="menu-standard" class="clearfix"><li id="nav-menu-item-777" class="menu-item  menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent has_sub narrow"><a href="index.html" class=""><span class="item_outer"><span class="item_text">Home</span></span></a>
 <li id="nav-menu-item-777" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent  has_sub narrow"><a href="about.html" class=""><span class="item_outer"><span class="item_text">About</span></span></a>
 <li id="nav-menu-item-780" class="menu-item menu-item-type-custom menu-item-object-custom has_sub narrow"><a href="contact.html" class=""><span class="item_outer"><span class="item_text">Contact</span></span></a>
-<li id="nav-menu-item-781" class="menu-item menu-item-type-custom menu-item-object-custom has_sub narrow"><a href="blog.html" class=""><span class="item_outer"><span class="item_text">Blog</span></span></a> </nav>
+<li id="nav-menu-item-781" class="menu-item mkdf-active-item menu-item-type-custom menu-item-object-custom has_sub narrow"><a href="blog.html" class=""><span class="item_outer"><span class="item_text">Blog</span></span></a> </nav>
 </div>
 </div>
 </div>
@@ -192,110 +176,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </div>
 
 </header>
-<section id="form">
-	<div class="mkdf-vss-ms-section" data-header-style="light" style="background-image: url(assets/uploads/2018/07/Split-slider-img-5.jpg);padding: 0px 0px 0px 0px;text-align: left">
-</div><div class="mkdf-vss-ms-section" data-header-style="dark" style="background-image: url(assets/uploads/2018/06/Split-slider-img-7.jpg);padding: 0px 0px 0px 0px;text-align: left">
-<div class="mkdf-elements-holder   mkdf-one-column  mkdf-responsive-mode-768 "><div class="mkdf-eh-item    " data-item-class="mkdf-eh-custom-10000" data-1367-1600="33px 90px 52px 90px" data-1025-1366="93px 90px 52px 90px" data-769-1024="82px 119px 106px 119px" data-681-768="164px 73px 97px 73px" data-680="15px 15px 30px 15px">
-<div class="mkdf-eh-item-inner">
-<div class="mkdf-eh-item-content mkdf-eh-custom-10000" style="padding: 93px 46px 100px 272px">
-<div class="wpb_text_column wpb_content_element ">
-<div class="wpb_wrapper" style="text-align: center;">
-	<h3 style="text-align: center;">Get In Touch With Us</h3>
-	<a class="mkdf-icon-widget-holder mkdf-icon-has-hover" data-hover-color="#ff8a73" href="mailto:contact@dronatech.in" target="_blank" >
-<span class="mkdf-icon-element icon_mail_alt" style="font-size: 20px"></span> <span class="mkdf-icon-text " style="font-size: 20px; text-align: center; padding-right: 10px">contact@dronatech.in</span> </a>
-<span class="mkdf-icon-element icon_phone"></span> <span class="mkdf-icon-text " style="font-size: 20px">+91 99304 81594</span>
-</div>
-<div class="row">
-	<div class="vc_col-xl-7 vc_col-lg-7 vc_col-sm-12 vc_col-md-12">
-<div class="widget mkdf-separator-widget"><div class="mkdf-separator-holder clearfix  mkdf-separator-center mkdf-separator-normal">
-<div class="mkdf-separator" style="border-style: solid;border-bottom-width: 10px;margin-top: 0px;margin-bottom: 0px"></div>
-</div>
-</div>
-<div role="form" class="wpcf7" id="wpcf7-f1216-p1429-o2" lang="en-US" dir="ltr">
-<div class="screen-reader-response" role="alert" aria-live="polite"></div>
-<br><br>
-<h4>Request a Demo Here</h4>
-<!-- <form action="success.html" method="post" class="wpcf7-form init cf7_custom_style_2" novalidate="novalidate"> -->
-<!-- 	<form action=”mailto:contact@dronatech.in” method=”POST” enctype=”multipart/form-data” name=”EmailTestForm”> -->
-<form method=”post” name=”contact_form” action=”contact.php”>
-<div style="display: none;">
-<input type="hidden" name="_wpcf7" value="1216" />
-<input type="hidden" name="_wpcf7_version" value="5.2.2" />
-<input type="hidden" name="_wpcf7_locale" value="en_US" />
-<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f1216-p1429-o2" />
-<input type="hidden" name="_wpcf7_container_post" value="1429" />
-<input type="hidden" name="_wpcf7_posted_data_hash" value="" />
-</div>
-<div class="mkdf-grid-row mkdf-grid-small-gutter">
-<div class="eltdf-grid-col-6">
-<p style="text-align: center;">
-<span class="wpcf7-form-control-wrap text-712"><input type="text" name="sender" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="FULL NAME" /></span>
-</p>
-</div>
-<div class="mkdf-grid-col-6">
-<p style="text-align: center;">
-<span class="wpcf7-form-control-wrap text-499">
-	<input name="mobile"  id="mobile" type="number" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="MOBILE NUMBER" required onkeyup="check(); return false;" /><span id="message"></span>
-</span>
-</p>
-</div>
-<div class="mkdf-grid-col-6">
-<p style="text-align: center;">
-<span class="wpcf7-form-control-wrap email-492"><input type="email" name="senderEmail" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="E-MAIL" /></span>
-</p>
-</div>
-</div>
-<div>
-<p style="text-align: center;">
-<span class="wpcf7-form-control-wrap textarea"><textarea name="message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false" placeholder="YOUR MESSAGE"></textarea></span>
-</p>
-</div>
-<div>
-<div class="mkdf-cf7-btn-custom-hover">
-<p style="text-align: left; margin-top: 30px;">
-<input type="submit" value="SEND" class="wpcf7-form-control wpcf7-submit" />
-</p>
-</div>
-</div>
-<!-- <div class="wpcf7-response-output" role="alert" aria-hidden="true"></div></form></div> 
-	</div>
-	<div class="col-xl-5 col-lg-5">
-		<img src="assets/uploads/2018/06/Split-slider-img-8.jpg">
-		<div style="background-image: url(assets/uploads/2018/06/Split-slider-img-8.jpg);padding: 0px 0px 0px 0px;text-align: left">
-	</div>
-</div>
- -->
-</form>
+<section style="position: relative; min-height: 523px">
+<h4 style="text-align: center; padding-top: 100px">Success! You will be redirected to the homepage in 3 seconds</h4>
 </section>
 
-<footer class="mkdf-page-footer  mkdf-footer-skin-light">
-<!-- <div class="mkdf-footer-top-holder">
-<div class="mkdf-footer-top-inner mkdf-grid">
-<div class="mkdf-grid-row mkdf-footer-top-alignment-center">
-<div class="mkdf-column-content mkdf-grid-col-3">
-<div id="text-3" class="widget mkdf-footer-column-2 widget_text"><div class="mkdf-widget-title-holder"><h5 class="mkdf-widget-title">Contact Info</h5></div> <div class="textwidget"><div style="margin-top: -11px;"></div>
-</div>
-</div>
-<a class="mkdf-icon-widget-holder mkdf-icon-has-hover" data-hover-color="#ff8a73" href="mailto:someone@yoursite.com" target="_blank">
-<span class="mkdf-icon-element icon_mail_alt" style="font-size: 16px"></span> <span class="mkdf-icon-text " style="font-size: 16px">contact@dronatech.in</span> </a>
-<div class="widget mkdf-separator-widget"><div class="mkdf-separator-holder clearfix  mkdf-separator-center mkdf-separator-normal">
-<div class="mkdf-separator" style="border-style: solid;border-bottom-width: 10px;margin-top: 0px;margin-bottom: 0px"></div>
-</div>
-</div>
-<a class="mkdf-icon-widget-holder mkdf-icon-has-hover" data-hover-color="#ff8a73" href="tel:+88%20(0)%20101%200000%20000" target="_blank">
-<span class="mkdf-icon-element icon_phone"></span> <span class="mkdf-icon-text " style="font-size: 16px">+91 99304 81594</span> </a>
-</div>
-<div class="mkdf-column-content mkdf-grid-col-3">
-<div id="text-4" class="widget mkdf-footer-column-4 widget_text"><div class="mkdf-widget-title-holder"><h5 class="mkdf-widget-title">Support &#038; Downloads</h5></div> <div class="textwidget"><div style="margin-top: 5px;">
-<p>Quisque actraqum nunc no dolor sit ametaugue dolor. Lorem ipsum dolor sit amet, consyect etur.</p>
-<div style="margin-top: 32px;"><a href="https://itunes.apple.com" target="_blank" rel="noopener noreferrer"><img class="alignnone size-full wp-image-936" style="display: inherit; max-width: 47%; padding: 0px 15px 0 0;" src="assets/uploads/2018/06/footer-icon1.png" alt="g" width="140" height="43" /></a><a href="https://play.google.com" target="_blank" rel="noopener noreferrer"><img class="alignnone size-full wp-image-937" style="display: inherit; max-width: 47%;" src="assets/uploads/2018/06/footer-icon2.png" alt="h" width="140" height="43" /></a></div>
-</div>
-</div>
-
-</div> </div>
-</div>
-</div>
-</div> --><div class="mkdf-footer-bottom-holder">
+<footer class="mkdf-page-footer  mkdf-footer-skin-light" style="bottom: 0">
+<div class="mkdf-footer-bottom-holder">
 <div class="mkdf-footer-bottom-inner mkdf-grid">
 <div class="mkdf-grid-row ">
 <div class="mkdf-grid-col-12">
@@ -380,7 +266,6 @@ var mkdfPerPageVars = {"vars":{"mkdfMobileHeaderHeight":70,"mkdfStickyScrollAmou
     });
 })(jQuery);
 </script>
-
 <script type="text/javascript" src="https://static.zdassets.com/ekr/snippet.js?key=af3078fd-a5ae-40da-bee0-e589b98c8603&#038;ver=5.3.2" id="ze-snippet"></script>
 <script type='text/javascript' src='frameworks/js/wp-embed.min.js'></script>
 </body>
