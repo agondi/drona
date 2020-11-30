@@ -10,6 +10,7 @@
 <link rel="profile" href="https://gmpg.org/xfn/11" />
 <link rel="stylesheet" href="bootstrap.min.css">
 <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=yes">
+
 <title>Drona Tech</title>
 <!--  -->
 <link rel='dns-prefetch' href='https://export.qodethemes.com/' />
@@ -197,42 +198,48 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <div class="screen-reader-response" role="alert" aria-live="polite"></div>
 <br><br>
 <h4>Request a Demo Here</h4>
-<form method="post" action="contact.php" class="wpcf7-form init cf7_custom_style_2" novalidate="novalidate">
-<div style="display: none;">
+<form method="POST" action="https://script.google.com/macros/s/AKfycbxLpcaRRnmPAYKNXJ5VkNy2Rd44Ir_jFV4NttU4GTfDWQoyMjPF/exec" class="wpcf7-form init cf7_custom_style_2" novalidate="novalidate">
+<!-- <div style="display: none;">
 <input type="hidden" name="_wpcf7" value="1216" />
 <input type="hidden" name="_wpcf7_version" value="5.2.2" />
 <input type="hidden" name="_wpcf7_locale" value="en_US" />
 <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f1216-p1429-o2" />
 <input type="hidden" name="_wpcf7_container_post" value="1429" />
 <input type="hidden" name="_wpcf7_posted_data_hash" value="" />
-</div>
+</div> -->
 <div class="mkdf-grid-row mkdf-grid-small-gutter">
 <div class="eltdf-grid-col-6">
 <p style="text-align: center;">
-<span class="wpcf7-form-control-wrap text-712"><input type="text" name="Sender" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="FULL NAME" /></span>
+<span class="wpcf7-form-control-wrap text-712"><input type="text" name="Sender Name" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="FULL NAME" /></span>
 </div>
 <div class="mkdf-grid-col-6">
 <p style="text-align: center;">
-<span class="wpcf7-form-control-wrap text-499"><input type="number" name="mobile" value="" size="10" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="MOBILE" /></span>
+<span class="wpcf7-form-control-wrap text-499"><input type="number" name="Mobile" value="" size="10" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="MOBILE" /></span>
 </div>
 <div class="mkdf-grid-col-6">
 <p style="text-align: center;">
-<span class="wpcf7-form-control-wrap email-492"><input type="SenderEmail" name="email-492" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="E-MAIL" /></span>
+<span class="wpcf7-form-control-wrap email-492"><input type="text" name="Sender Email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="E-MAIL" /></span>
 </div>
 </div>
 <div>
 <p style="text-align: center;">
-<span class="wpcf7-form-control-wrap textarea"><textarea name="message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false" placeholder="YOUR MESSAGE"></textarea></span>
+<span class="wpcf7-form-control-wrap textarea"><textarea name="Message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false" placeholder="YOUR MESSAGE"></textarea></span>
 </p>
 </div>
 <div>
 <div class="mkdf-cf7-btn-custom-hover">
 <p style="text-align: left; margin-top: 30px;">
-<input type="submit" value="SEND" class="wpcf7-form-control wpcf7-submit" />
+<!-- 	<a href="success.html"> -->
+<input type="submit" value="SEND" class="wpcf7-form-control wpcf7-submit" id="submit" onclick="redirect()" />
 </p>
 </div>
 </div>
-<div class="wpcf7-response-output" role="alert" aria-hidden="true"></div></form></div> 
+<div class="wpcf7-response-output" role="alert" aria-hidden="true"></div>
+ <!-- Customise the Thankyou Message People See when they submit the form: -->
+    <div class="thankyou_message" style="display:none;">
+      <h2><em>Thanks</em> for contacting us!
+        We will get back to you soon!</h2>
+    </div></form></div> 
 	</div>
 	<div class="col-xl-5 col-lg-5">
 		<img src="assets/uploads/2018/06/Split-slider-img-8.jpg">
@@ -243,33 +250,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </section>
 
 <footer class="mkdf-page-footer  mkdf-footer-skin-light">
-<!-- <div class="mkdf-footer-top-holder">
-<div class="mkdf-footer-top-inner mkdf-grid">
-<div class="mkdf-grid-row mkdf-footer-top-alignment-center">
-<div class="mkdf-column-content mkdf-grid-col-3">
-<div id="text-3" class="widget mkdf-footer-column-2 widget_text"><div class="mkdf-widget-title-holder"><h5 class="mkdf-widget-title">Contact Info</h5></div> <div class="textwidget"><div style="margin-top: -11px;"></div>
-</div>
-</div>
-<a class="mkdf-icon-widget-holder mkdf-icon-has-hover" data-hover-color="#ff8a73" href="mailto:someone@yoursite.com" target="_blank">
-<span class="mkdf-icon-element icon_mail_alt" style="font-size: 16px"></span> <span class="mkdf-icon-text " style="font-size: 16px">contact@dronatech.in</span> </a>
-<div class="widget mkdf-separator-widget"><div class="mkdf-separator-holder clearfix  mkdf-separator-center mkdf-separator-normal">
-<div class="mkdf-separator" style="border-style: solid;border-bottom-width: 10px;margin-top: 0px;margin-bottom: 0px"></div>
-</div>
-</div>
-<a class="mkdf-icon-widget-holder mkdf-icon-has-hover" data-hover-color="#ff8a73" href="tel:+88%20(0)%20101%200000%20000" target="_blank">
-<span class="mkdf-icon-element icon_phone"></span> <span class="mkdf-icon-text " style="font-size: 16px">+91 99304 81594</span> </a>
-</div>
-<div class="mkdf-column-content mkdf-grid-col-3">
-<div id="text-4" class="widget mkdf-footer-column-4 widget_text"><div class="mkdf-widget-title-holder"><h5 class="mkdf-widget-title">Support &#038; Downloads</h5></div> <div class="textwidget"><div style="margin-top: 5px;">
-<p>Quisque actraqum nunc no dolor sit ametaugue dolor. Lorem ipsum dolor sit amet, consyect etur.</p>
-<div style="margin-top: 32px;"><a href="https://itunes.apple.com" target="_blank" rel="noopener noreferrer"><img class="alignnone size-full wp-image-936" style="display: inherit; max-width: 47%; padding: 0px 15px 0 0;" src="assets/uploads/2018/06/footer-icon1.png" alt="g" width="140" height="43" /></a><a href="https://play.google.com" target="_blank" rel="noopener noreferrer"><img class="alignnone size-full wp-image-937" style="display: inherit; max-width: 47%;" src="assets/uploads/2018/06/footer-icon2.png" alt="h" width="140" height="43" /></a></div>
-</div>
-</div>
-
-</div> </div>
-</div>
-</div>
-</div> --><div class="mkdf-footer-bottom-holder">
+<div class="mkdf-footer-bottom-holder">
 <div class="mkdf-footer-bottom-inner mkdf-grid">
 <div class="mkdf-grid-row ">
 <div class="mkdf-grid-col-12">
@@ -336,6 +317,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <script type='text/javascript' src='assets/plugins/foton-core/shortcodes/vertical-split-slider/assets/js/plugins/jquery.multiscroll.min.js'></script>
 <script type='text/javascript' src='assets/plugins/woocommerce/assets/js/select2/select2.full.min.js'></script>
 <script type='text/javascript' src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBg3m9KV-QHjDk1ougY0gcPWw8yQSt_Elg&amp;ver=5.3.2'></script>
+<script data-cfasync="false" type="text/javascript"
+src="https://cdn.rawgit.com/dwyl/learn-to-send-email-via-google-script-html-no-server/blob/master/form-submission-handler.js"></script>
+<script data-cfasync="false" type="text/javascript"
+src="form-submission-handler.js"></script>
 <script type='text/javascript'>
 /* <![CDATA[ */
 var mkdfGlobalVars = {"vars":{"mkdfAddForAdminBar":0,"mkdfElementAppearAmount":-100,"mkdfAjaxUrl":"https:\/\/foton.qodeinteractive.com\/wp-admin\/admin-ajax.php","mkdfStickyHeaderHeight":0,"mkdfStickyHeaderTransparencyHeight":70,"mkdfTopBarHeight":0,"mkdfLogoAreaHeight":0,"mkdfMenuAreaHeight":120,"mkdfMobileHeaderHeight":70}};
@@ -353,6 +338,11 @@ var mkdfPerPageVars = {"vars":{"mkdfMobileHeaderHeight":70,"mkdfStickyScrollAmou
         }
     });
 })(jQuery);
+</script>
+<script type="text/javascript">
+function redirect() {
+	window.open("success.html")
+}
 </script>
 <script type="text/javascript" src="https://static.zdassets.com/ekr/snippet.js?key=af3078fd-a5ae-40da-bee0-e589b98c8603&#038;ver=5.3.2" id="ze-snippet"></script>
 <script type='text/javascript' src='frameworks/js/wp-embed.min.js'></script>
