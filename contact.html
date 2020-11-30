@@ -1,20 +1,3 @@
-<?php
-
-if($_POST["submit"]) {
-    $recipient="contact@dronatech.in";
-    $subject="Request Demo";
-    $sender=$_POST["sender"];
-    $senderEmail=$_POST["senderEmail"];
-    $message=$_POST["message"];
-
-    $mailBody="Name: $sender\nEmail: $senderEmail\n\n$message";
-
-    mail($recipient, $subject, $mailBody, "From: $sender <$senderEmail>");
-
-    $thankYou="<p>Thank you! Your message has been sent.</p>";
-}
-
-?>
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
@@ -47,7 +30,6 @@ img.emoji {
 	background: none !important;
 	padding: 0 !important;
 }
-
 fix-3-12{max-width:280px!important}
 </style>
 <link rel='stylesheet' id='js_composer_front-css' href='assets/plugins/js_composer/assets/css/js_composer.min.css' type='text/css' media='all' />
@@ -215,9 +197,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <div class="screen-reader-response" role="alert" aria-live="polite"></div>
 <br><br>
 <h4>Request a Demo Here</h4>
-<!-- <form action="success.html" method="post" class="wpcf7-form init cf7_custom_style_2" novalidate="novalidate"> -->
-<!-- 	<form action=”mailto:contact@dronatech.in” method=”POST” enctype=”multipart/form-data” name=”EmailTestForm”> -->
-<form method=”post” name=”contact_form” action=”contact.php”>
+<form action="index.html#wpcf7-f1216-p1429-o2" method="post" class="wpcf7-form init cf7_custom_style_2" novalidate="novalidate">
 <div style="display: none;">
 <input type="hidden" name="_wpcf7" value="1216" />
 <input type="hidden" name="_wpcf7_version" value="5.2.2" />
@@ -229,25 +209,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <div class="mkdf-grid-row mkdf-grid-small-gutter">
 <div class="eltdf-grid-col-6">
 <p style="text-align: center;">
-<span class="wpcf7-form-control-wrap text-712"><input type="text" name="sender" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="FULL NAME" /></span>
-</p>
+<span class="wpcf7-form-control-wrap text-712"><input type="text" name="text-712" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="FULL NAME" /></span>
 </div>
 <div class="mkdf-grid-col-6">
 <p style="text-align: center;">
-<span class="wpcf7-form-control-wrap text-499">
-	<input name="mobile"  id="mobile" type="number" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="MOBILE NUMBER" required onkeyup="check(); return false;" /><span id="message"></span>
-</span>
-</p>
+<span class="wpcf7-form-control-wrap text-499"><input type="text" name="text-499" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="FIRST NAME" /></span>
 </div>
 <div class="mkdf-grid-col-6">
 <p style="text-align: center;">
-<span class="wpcf7-form-control-wrap email-492"><input type="email" name="senderEmail" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="E-MAIL" /></span>
-</p>
+<span class="wpcf7-form-control-wrap email-492"><input type="email" name="email-492" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="E-MAIL" /></span>
 </div>
 </div>
 <div>
 <p style="text-align: center;">
-<span class="wpcf7-form-control-wrap textarea"><textarea name="message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false" placeholder="YOUR MESSAGE"></textarea></span>
+<span class="wpcf7-form-control-wrap textarea"><textarea name="textarea" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false" placeholder="YOUR MESSAGE"></textarea></span>
 </p>
 </div>
 <div>
@@ -257,15 +232,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </p>
 </div>
 </div>
-<!-- <div class="wpcf7-response-output" role="alert" aria-hidden="true"></div></form></div> 
+<div class="wpcf7-response-output" role="alert" aria-hidden="true"></div></form></div> 
 	</div>
 	<div class="col-xl-5 col-lg-5">
 		<img src="assets/uploads/2018/06/Split-slider-img-8.jpg">
-		<div style="background-image: url(assets/uploads/2018/06/Split-slider-img-8.jpg);padding: 0px 0px 0px 0px;text-align: left">
+		<!-- <div style="background-image: url(assets/uploads/2018/06/Split-slider-img-8.jpg);padding: 0px 0px 0px 0px;text-align: left"> -->
 	</div>
 </div>
- -->
-</form>
+
 </section>
 
 <footer class="mkdf-page-footer  mkdf-footer-skin-light">
@@ -380,7 +354,6 @@ var mkdfPerPageVars = {"vars":{"mkdfMobileHeaderHeight":70,"mkdfStickyScrollAmou
     });
 })(jQuery);
 </script>
-
 <script type="text/javascript" src="https://static.zdassets.com/ekr/snippet.js?key=af3078fd-a5ae-40da-bee0-e589b98c8603&#038;ver=5.3.2" id="ze-snippet"></script>
 <script type='text/javascript' src='frameworks/js/wp-embed.min.js'></script>
 </body>
