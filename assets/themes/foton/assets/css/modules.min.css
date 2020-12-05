@@ -20,6 +20,7 @@ table td,table th{text-align:center}body,h1,h2,h3{font-weight:300}h5,h6{line-hei
 	#headingTitle{
 		padding-top: 200px;
 	}
+	.mantra{display: none}
 	/*}
 	.mkdf-rev-has-paspartu,.mkdf-vertical-align-containers .mkdf-position-center-inner,.mkdf-vertical-align-containers .mkdf-position-left-inner,.mkdf-vertical-align-containers .mkdf-position-right-inner{
 		display:none;vertical-align:middle}*/
