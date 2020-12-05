@@ -11,7 +11,7 @@
 	p{font-size: 20px}
 
 	}
-@media only screen and (min-width:681px) and (max-width:768px){
+@media only screen and (min-width:650px) and (max-width:768px){
 	h1{font-size:55px;padding-top: 50px;}
 	h2{font-size:42px}
 	h3{font-size:36px} 
@@ -19,7 +19,7 @@
 	h5{font-size:20px}
 	p{font-size: 20px}
 	}
-@media only screen and (max-width:680px){
+@media only screen and (max-width:650px){
 	h1{font-size:38px}
 	h2{font-size:28px}
 	h3{font-size:24px}
