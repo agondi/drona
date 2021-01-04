@@ -21,6 +21,506 @@
 	<style id='rs-plugin-settings-inline-css' type='text/css'>
 		#rs-demo-id {}
 	</style>
+	<style type="text/css">
+		img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.trigger {
+  display: none;
+}
+
+.slider, .slider-wrapper {
+  position: relative;
+  height: 250px;
+}
+
+.slide {
+/*  background-color: black;*/
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 5000;
+  opacity: 0;
+  transition: opacity .5s ease-in-out;
+}
+
+.slide-img {
+/*  filter: brightness(50%);*/
+  height: 100%;
+  object-fit: fill;
+  display: block;
+  margin: 0 auto;
+  border-color: 
+}
+
+.slide-figure {
+  height: 100%;
+  position: relative;
+  margin: 0;
+}
+
+.slide-caption {
+  position: absolute;
+  bottom: 30%;
+  width: calc(100% - 1rem);
+  color: white;
+  text-align: center;
+  left: 50%;
+}
+
+.trigger:checked + .slide {
+  z-index: 6000;
+  opacity: 1;
+}
+
+.trigger1 {
+  display: none;
+}
+.trigger1:checked + .slide {
+  z-index: 6000;
+  opacity: 1;
+}
+
+.slider-nav {
+  width: 100%;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.slider-nav__item {
+  display: inline-block;
+}
+
+.slider-nav__label {
+  font-size: 13px;
+  background-color: #333;
+  display: block;
+  height: 2em;
+  line-height: 2em;
+  width: 2em;
+  text-align: center;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  transition: background-color .25s, color .25s ease-in-out;
+}
+
+.slider-nav__label:hover,
+.slider-nav__label:active,
+.slider-nav__label:focus {
+  background-color: gray;
+  color: black;
+}
+@media only screen and (min-width: 1024px) {
+  .slider, .slider-wrapper {
+    height: 480px;
+  }
+
+  .slide-caption {
+    width: 65%;
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+  .slider, .slider-wrapper {
+    height: 360px;
+  }
+
+  .slide-caption {
+    width: 75%;
+    font-size: 1.25rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .slide-img {
+  	box-shadow: 10px 10px 5px grey;
+	width: 45%;
+	height: 100%
+  }
+}
+
+/*cxxx1xxxx*/
+
+.trigger1 {
+  display: none;
+}
+
+.slider1, .slider-wrapper1 {
+  position: relative;
+  height: 250px;
+}
+
+.slide1 {
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 5000;
+  opacity: 0;
+  transition: opacity .5s ease-in-out;
+}
+
+.slide-img1 {
+  height: 100%;
+  object-fit: fill;
+  display: block;
+  margin: 0 auto;
+  border-color: 
+}
+
+.slide-figure {
+  height: 100%;
+  position: relative;
+  margin: 0;
+}
+
+.trigger1:checked + .slide1 {
+  z-index: 6000;
+  opacity: 1;
+}
+
+.slider-nav1{
+  width: 100%;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.slider-nav__item1 {
+  display: inline-block;
+}
+
+.slider-nav__label1 {
+  font-size: 13px;
+  background-color: #333;
+  display: block;
+  height: 2em;
+  line-height: 2em;
+  width: 2em;
+  text-align: center;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  transition: background-color .25s, color .25s ease-in-out;
+}
+
+.slider-nav__label1:hover,
+.slider-nav__label1:active,
+.slider-nav__label1:focus {
+  background-color: gray;
+  color: black;
+}
+@media only screen and (min-width: 1024px) {
+  .slider1, .slider-wrapper1 {
+    height: 480px;
+  }
+
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+  .slider1, .slider-wrapper1 {
+    height: 360px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .slide-img1 {
+  	box-shadow: 10px 10px 5px grey;
+	width: 45%;
+	height: 100%
+  }
+}
+
+/*cxxx2xxxx*/
+
+.trigger2 {
+  display: none;
+}
+
+.slider2, .slider-wrapper2 {
+  position: relative;
+  height: 250px;
+}
+
+.slide2 {
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 5000;
+  opacity: 0;
+  transition: opacity .5s ease-in-out;
+}
+
+.slide-img2 {
+  height: 100%;
+  object-fit: fill;
+  display: block;
+  margin: 0 auto;
+  border-color: 
+}
+
+.slide-figure2 {
+  height: 100%;
+  position: relative;
+  margin: 0;
+}
+
+.trigger2:checked + .slide2 {
+  z-index: 6000;
+  opacity: 1;
+}
+
+.slider-nav2{
+  width: 100%;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.slider-nav__item2 {
+  display: inline-block;
+}
+
+.slider-nav__label2 {
+  font-size: 13px;
+  background-color: #333;
+  display: block;
+  height: 2em;
+  line-height: 2em;
+  width: 2em;
+  text-align: center;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  transition: background-color .25s, color .25s ease-in-out;
+}
+
+.slider-nav__label2:hover,
+.slider-nav__label2:active,
+.slider-nav__label2:focus {
+  background-color: gray;
+  color: black;
+}
+@media only screen and (min-width: 1024px) {
+  .slider2, .slider-wrapper2 {
+    height: 480px;
+  }
+
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+  .slider2, .slider-wrapper2 {
+    height: 360px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .slide-img2 {
+  	box-shadow: 10px 10px 5px grey;
+	width: 45%;
+	height: 100%
+  }
+}
+
+/*cxxx3xxxx*/
+
+.trigger3 {
+  display: none;
+}
+
+.slider3, .slider-wrapper3 {
+  position: relative;
+  height: 250px;
+}
+
+.slide3 {
+/*  background-color: black;*/
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 5000;
+  opacity: 0;
+  transition: opacity .5s ease-in-out;
+}
+
+.slide-img3 {
+  height: 100%;
+  object-fit: fill;
+  display: block;
+  margin: 0 auto;
+  border-color: 
+}
+
+.slide-figure3 {
+  height: 100%;
+  position: relative;
+  margin: 0;
+}
+
+.trigger3:checked + .slide3 {
+  z-index: 6000;
+  opacity: 1;
+}
+
+.slider-nav3{
+  width: 100%;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.slider-nav__item3 {
+  display: inline-block;
+}
+
+.slider-nav__label3 {
+  font-size: 13px;
+  background-color: #333;
+  display: block;
+  height: 2em;
+  line-height: 2em;
+  width: 2em;
+  text-align: center;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  transition: background-color .25s, color .25s ease-in-out;
+}
+
+.slider-nav__label3:hover,
+.slider-nav__label3:active,
+.slider-nav__label3:focus {
+  background-color: gray;
+  color: black;
+}
+@media only screen and (min-width: 1024px) {
+  .slider3, .slider-wrapper3 {
+    height: 480px;
+  }
+
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+  .slider1, .slider-wrapper3 {
+    height: 360px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .slide-img3 {
+  	box-shadow: 10px 10px 5px grey;
+	width: 45%;
+	height: 100%
+  }
+}
+
+/*cxxx4xxxx*/
+
+.trigger4 {
+  display: none;
+}
+
+.slider4, .slider-wrapper4 {
+  position: relative;
+  height: 250px;
+}
+
+.slide4 {
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 5000;
+  opacity: 0;
+  transition: opacity .5s ease-in-out;
+}
+
+.slide-img4 {
+  height: 100%;
+  object-fit: fill;
+  display: block;
+  margin: 0 auto;
+  border-color: 
+}
+
+.slide-figure4 {
+  height: 100%;
+  position: relative;
+  margin: 0;
+}
+
+.trigger4:checked + .slide4 {
+  z-index: 6000;
+  opacity: 1;
+}
+
+.slider-nav4{
+  width: 100%;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.slider-nav__item4 {
+  display: inline-block;
+}
+
+.slider-nav__label4 {
+  font-size: 13px;
+  background-color: #333;
+  display: block;
+  height: 2em;
+  line-height: 2em;
+  width: 2em;
+  text-align: center;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  transition: background-color .25s, color .25s ease-in-out;
+}
+
+.slider-nav__label4:hover,
+.slider-nav__label4:active,
+.slider-nav__label4:focus {
+  background-color: gray;
+  color: black;
+}
+@media only screen and (min-width: 1024px) {
+  .slider4, .slider-wrapper4 {
+    height: 480px;
+  }
+
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+  .slider4, .slider-wrapper4 {
+    height: 360px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .slide-img4 {
+  	box-shadow: 10px 10px 5px grey;
+	width: 45%;
+	height: 100%
+  }
+}
+
+	</style>
+
 	<link rel='stylesheet' id='foton-mikado-default-style-css' href='assets/themes/foton/style.css' type='text/css' media='all' />
 	<link rel='stylesheet' id='foton-mikado-modules-css' href='assets/themes/foton/assets/css/modules.min.css' type='text/css' media='all' />
 	<link rel='stylesheet' id='foton-mikado-dripicons-css' href='assets/themes/foton/framework/lib/icons-pack/dripicons/dripicons.css' type='text/css' media='all' />
@@ -88,7 +588,7 @@
 
 												<h1 class="headingTitle">Drona Tech</h1> </div>
 												<p class="mkdf-st-text" style="font-size: 20px;line-height: 33px;margin-top: 25px; padding-bottom: 250px; text-align: center;">
-												an end-to-end content SaaS for Indian students and teachers to bring learning back into the classroom together</p>
+													an end-to-end content SaaS of connected tools and resources to enhance learning and teaching in Indian schools</p>
 											</div>
 										</div>
 									</div>
@@ -133,7 +633,7 @@
 					</span>
 				</a>
 				
-				<div class="mkdf-row-grid-section-wrapper " >
+				<!-- <div class="mkdf-row-grid-section-wrapper " >
 					<div class="mkdf-row-grid-section">
 						<div class="vc_row wpb_row vc_row-fluid">
 							<div class="wpb_column vc_column_container vc_col-sm-12">
@@ -228,7 +728,208 @@
 									</div>
 								</div>
 							</div>
-						</div>
+						</div> -->
+						
+<div class="row" style="padding: 3vh; padding-bottom: 10vh">
+	<div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+		<div class="slider-wrapper">
+			<div class="slider">
+				<input type="radio" name="slider" class="trigger" id="one" checked="checked" />
+				<div class="slide">
+					<figure class="slide-figure">
+						<img class="slide-img" style="" src="assets/uploads/planning/1.png" />
+					</figure><!-- .slide-figure -->
+				</div><!-- .slide -->
+				<input type="radio" name="slider" class="trigger" id="two" />
+				<div class="slide">
+					<figure class="slide-figure">
+						<img class="slide-img" src="assets/uploads/planning/2.png" />
+					</figure><!-- .slide-figure -->
+				</div><!-- .slide -->
+				<input type="radio" name="slider" class="trigger" id="three" />
+				<div class="slide">
+					<figure class="slide-figure">
+						<img class="slide-img" src="assets/uploads/planning/3.png" />
+					</figure><!-- .slide-figure -->
+				</div><!-- .slide -->
+			</div><!-- .slider -->
+			<ul class="slider-nav">
+				<li class="slider-nav__item"><label class="slider-nav__label" for="one"></label></li>
+    			<li class="slider-nav__item"><label class="slider-nav__label" for="two"></label></li>
+    			<li class="slider-nav__item"><label class="slider-nav__label" for="three"></label></li>
+    		</ul><!-- .slider-nav -->
+    	</div><!-- .slider-wrapper -->
+    </div>
+    <div class="col-5 col-sm-5 col-md-5 col-lg-5 col-xl-5" style="padding: 1vh">
+							<h3>Adaptive Course Planning</h3>
+							<p>
+							<img src="assets/uploads/2018/06/check.svg" alt="icon">
+								<span class="section6-list-items" style="margin-left: 1vw; margin-right: 2vw">Yearly Planner</span><br>
+							<img src="assets/uploads/2018/06/check.svg" alt="icon">
+								<span class="section6-list-items" style="margin-left: 1vw; margin-right: 2vw">Chapter Planner</span><br>
+							<img src="assets/uploads/2018/06/check.svg" alt="icon">
+								<span class="section6-list-items" style="margin-left: 1vw; margin-right: 2vw">Course Tracking</span><br><br>
+							No more fear of cramming classes at the end of every term. We help plan each teacher's academic year, chapters and lessons while tracking to ensure they finish on time with ease via our AI-enabled planning system. 
+								<br>Learn from the hits and misses of each term by identifying gaps in the teaching-learning process and take timely corrective actions so that each teacher never stops growing in their journey as a teacher.<br><br>
+							</p>
+	</div>
+	<div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1"></div>
+</div>
+<br><br>
+<div class="row" style="padding: 3vh; padding-bottom: 10vh">
+		<div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1"></div>
+    <div class="col-5 col-sm-5 col-md-5 col-lg-5 col-xl-5" style="padding: 1vh">
+							<h3>Automatic lesson creation tool</h3>
+							<p>
+							<img src="assets/uploads/2018/06/check.svg" alt="icon">
+								<span class="section6-list-items" style="margin-left: 1vw; margin-right: 2vw">Interactive Diagrams</span><br>
+							<img src="assets/uploads/2018/06/check.svg" alt="icon">
+								<span class="section6-list-items" style="margin-left: 1vw; margin-right: 2vw">Engaging Videos</span><br>
+							<img src="assets/uploads/2018/06/check.svg" alt="icon">
+								<span class="section6-list-items" style="margin-left: 1vw; margin-right: 2vw">Focused Notes and Questions</span><br><br>
+							Teachers create lessons using a repository of diagrams, notes, videos, and questions curated by Drona teachers based on the topic. Instead of spending hours scouring the internet from the plethora of resources available, our team of teachers helps identify engaging videos for teachers to use during class, as well as for remedial classes tailored to student understanding.<br><br>
+							</p>
+	</div>
+
+	<div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+		<div class="slider-wrapper1">
+			<div class="slider1">
+				<input type="radio" name="slider1" class="trigger1" id="one1" checked="checked" />
+				<div class="slide">
+					<figure class="slide-figure1">
+						<img class="slide-img1" style="" src="assets/uploads/lesson/1.png" />
+					</figure><!-- .slide-figure -->
+				</div><!-- .slide -->
+				<input type="radio" name="slider1" class="trigger1" id="two1" />
+				<div class="slide1">
+					<figure class="slide-figure1">
+						<img class="slide-img1" src="assets/uploads/lesson/2.png" />
+					</figure><!-- .slide-figure -->
+				</div><!-- .slide -->
+			</div><!-- .slider -->
+			<ul class="slider-nav1">
+				<li class="slider-nav__item1"><label class="slider-nav__label1" for="one1"></label></li>
+    			<li class="slider-nav__item1"><label class="slider-nav__label1" for="two1"></label></li>
+    		</ul><!-- .slider-nav -->
+    	</div><!-- .slider-wrapper -->
+    </div>
+</div>
+
+
+<br><br>
+<div class="row" style="padding: 3vh; padding-bottom: 10vh">
+	<div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+		<div class="slider-wrapper2">
+			<div class="slider2">
+				<input type="radio" name="slider2" class="trigger2" id="one2" checked="checked" />
+				<div class="slide2">
+					<figure class="slide-figure2">
+						<img class="slide-img2" style="" src="assets/uploads/homework/1.png" />
+					</figure><!-- .slide-figure -->
+				</div><!-- .slide -->
+				<input type="radio" name="slider2" class="trigger2" id="two2" />
+				<div class="slide2">
+					<figure class="slide-figure2">
+						<img class="slide-img2" src="assets/uploads/homework/2.png" />
+					</figure><!-- .slide-figure -->
+				</div><!-- .slide -->
+				<input type="radio" name="slider2" class="trigger2" id="three2" />
+				<div class="slide2">
+					<figure class="slide-figure2">
+						<img class="slide-img2" src="assets/uploads/homework/3.png" />
+					</figure><!-- .slide-figure -->
+				</div><!-- .slide -->
+				<input type="radio" name="slider2" class="trigger2" id="four2" />
+				<div class="slide2">
+					<figure class="slide-figure2">
+						<img class="slide-img2" src="assets/uploads/homework/4.png" />
+					</figure><!-- .slide-figure -->
+				</div><!-- .slide -->
+			</div><!-- .slider -->
+			<ul class="slider-nav2">
+				<li class="slider-nav__item2"><label class="slider-nav__label2" for="one2"></label></li>
+    			<li class="slider-nav__item2"><label class="slider-nav__label2" for="two2"></label></li>
+    			<li class="slider-nav__item2"><label class="slider-nav__label2" for="three2"></label></li>
+    			<li class="slider-nav__item2"><label class="slider-nav__label2" for="four2"></label></li>
+    		</ul><!-- .slider-nav -->
+    	</div><!-- .slider-wrapper -->
+    </div>
+    <div class="col-5 col-sm-5 col-md-5 col-lg-5 col-xl-5" style="padding: 1vh">
+							<h3>Customized Homework</h3>
+							<p>
+							<img src="assets/uploads/2018/06/check.svg" alt="icon">
+								<span class="section6-list-items" style="margin-left: 1vw; margin-right: 2vw">Objective Questions</span><br>
+							<img src="assets/uploads/2018/06/check.svg" alt="icon">
+								<span class="section6-list-items" style="margin-left: 1vw; margin-right: 2vw">CBSE mapped questions</span><br>
+							<img src="assets/uploads/2018/06/check.svg" alt="icon">
+								<span class="section6-list-items" style="margin-left: 1vw; margin-right: 2vw">Higher Order Thinking Skills (HOTS) Questions</span><br><br>
+							Drona provides teachers with a vast catalogue of questions with the additional option to use an automated homework generator where questions are tailored to teacher preferences. <br><br>
+							</p>
+	</div>
+	<div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1"></div>
+</div>
+<br><br>
+<div class="row" style="padding: 3vh; padding-bottom: 10vh">
+		<div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1"></div>
+	<div class="col-5 col-sm-5 col-md-5 col-lg-5 col-xl-5" style="padding: 1vh">
+							<h3>Personalized Learning Pathways</h3>
+							<p>
+							<img src="assets/uploads/2018/06/check.svg" alt="icon">
+								<span class="section6-list-items" style="margin-left: 1vw; margin-right: 2vw">Adaptive Testing and Content</span><br>
+							<img src="assets/uploads/2018/06/check.svg" alt="icon">
+								<span class="section6-list-items" style="margin-left: 1vw; margin-right: 2vw">Gamification</span><br>
+							<img src="assets/uploads/2018/06/check.svg" alt="icon">
+								<span class="section6-list-items" style="margin-left: 1vw; margin-right: 2vw">Exam Revision Material</span><br><br>
+							To ensure conceptual clarity of each topic in a chapter, Drona creates a personalized learning pathway based on student's proficiency using an adaptive quiz. With an extensive integration of gamification across the platform, we vie to reward learning first. Results second. <br><br>
+							</p>
+	</div>
+	<div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+		<div class="slider-wrapper3">
+			<div class="slider3">
+				<input type="radio" name="slider3" class="trigger3" id="one3" checked="checked" />
+				<div class="slide3">
+					<figure class="slide-figure3">
+						<img class="slide-img3" style="" src="assets/uploads/personalized/1.png" />
+					</figure><!-- .slide-figure -->
+				</div><!-- .slide -->
+				<input type="radio" name="slider3" class="trigger3" id="two3" />
+				<div class="slide3">
+					<figure class="slide-figure3">
+						<img class="slide-img3" src="assets/uploads/personalized/2.png" />
+					</figure><!-- .slide-figure -->
+				</div><!-- .slide -->
+				
+			</div><!-- .slider -->
+			<ul class="slider-nav3">
+				<li class="slider-nav__item3"><label class="slider-nav__label3" for="one3"></label></li>
+    			<li class="slider-nav__item3"><label class="slider-nav__label3" for="two3"></label></li>
+    		</ul><!-- .slider-nav -->
+    	</div><!-- .slider-wrapper -->
+    </div>
+    
+</div>
+<br><br>
+<div class="row" style="padding: 3vh; padding-bottom: 10vh">
+	<div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+		
+    </div>
+    <div class="col-5 col-sm-5 col-md-5 col-lg-5 col-xl-5" style="padding: 1vh">
+							<h3>Classroom Analytics</h3>
+							<p>
+							<!-- <img src="assets/uploads/2018/06/check.svg" alt="icon">
+								<span class="section6-list-items" style="margin-left: 1vw; margin-right: 2vw">Yearly Planner</span><br>
+							<img src="assets/uploads/2018/06/check.svg" alt="icon">
+								<span class="section6-list-items" style="margin-left: 1vw; margin-right: 2vw">Chapter Planner</span><br>
+							<img src="assets/uploads/2018/06/check.svg" alt="icon">
+								<span class="section6-list-items" style="margin-left: 1vw; margin-right: 2vw">Course Tracking</span><br><br> -->
+							Insights into individual student and overall class progress demarcated by learner and academic needs to ensure tailored instruction<br><br>
+							</p>
+	</div>
+	<div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1"></div>
+</div>
+						
+              
+<br><br>
 						<div class="mkdf-row-grid-section-wrapper " style="background-color:#e9f2ff; margin-bottom: 70px">
 							<div class="mkdf-row-grid-section">
 								<div class="vc_row wpb_row vc_row-fluid">
@@ -668,6 +1369,77 @@ function handleMouseMove(e) {
 //we need to recalculate width when the window is resized
 function handleWindowResize() {
 	width = window.innerWidth;
+}
+</script>
+<script type="text/javascript">
+	var slideIndex = 1;
+
+var myTimer;
+
+var slideshowContainer;
+
+window.addEventListener("load",function() {
+    showSlides(slideIndex);
+    myTimer = setInterval(function(){plusSlides(1)}, 4000);
+  
+    //COMMENT OUT THE LINE BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
+    slideshowContainer = document.getElementsByClassName('slideshow-inner')[0];
+  
+    //UNCOMMENT OUT THE LINE BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
+    // slideshowContainer = document.getElementsByClassName('slideshow-container')[0];
+  
+    slideshowContainer.addEventListener('mouseenter', pause)
+    slideshowContainer.addEventListener('mouseleave', resume)
+})
+
+// NEXT AND PREVIOUS CONTROL
+function plusSlides(n){
+  clearInterval(myTimer);
+  if (n < 0){
+    showSlides(slideIndex -= 1);
+  } else {
+   showSlides(slideIndex += 1); 
+  }
+  
+  //COMMENT OUT THE LINES BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
+  
+  if (n === -1){
+    myTimer = setInterval(function(){plusSlides(n + 2)}, 4000);
+  } else {
+    myTimer = setInterval(function(){plusSlides(n + 1)}, 4000);
+  }
+}
+
+//Controls the current slide and resets interval if needed
+function currentSlide(n){
+  clearInterval(myTimer);
+  myTimer = setInterval(function(){plusSlides(n + 1)}, 4000);
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n){
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+pause = () => {
+  clearInterval(myTimer);
+}
+
+resume = () =>{
+  clearInterval(myTimer);
+  myTimer = setInterval(function(){plusSlides(slideIndex)}, 4000);
 }
 </script>
 <script type='text/javascript'>
